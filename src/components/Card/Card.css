@@ -6,6 +6,7 @@
     align-items: start;
     justify-content: center;
     gap:5px;
+    flex-direction: column;
 }
 .card .images{
     width: 100%;

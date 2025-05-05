@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import "./Navbar.css"
 import logo from "../../assets/p.jpg"
-import { IoSearch } from "react-icons/ci";
+import { IoSearch } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { CgProfile } from "react-icons/cg";
 import { MdOutlineWhatshot } from "react-icons/md";
@@ -31,7 +31,7 @@ function Navbar() {
             </div>
             <div className="search">
                 <input type="text" placeholder='Search Destination'/>
-                <button><span>Search</span> <IoSearch /></button>
+                <button><span>Search</span><IoSearch /></button>
             </div>
             <div className='ham'>
                 <button id="btn1">List Your Home</button>
