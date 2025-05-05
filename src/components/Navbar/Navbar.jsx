@@ -1,13 +1,28 @@
-import React from 'react'
+import React,{useState} from 'react'
 import "./Navbar.css"
 import logo from "../../assets/p.jpg"
-import { CiSearch } from "react-icons/ci";
+import { IoSearch } from "react-icons/ci";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { CgProfile } from "react-icons/cg";
-
+import { MdOutlineWhatshot } from "react-icons/md";
+import { GiFamilyHouse } from "react-icons/gi";
+import { MdBedroomParent } from "react-icons/md";
+import { PiFarm } from "react-icons/pi";
+import { IoMdAddCircleOutline } from "react-icons/io";
+import { LuTentTree } from "react-icons/lu";
+import { GiWoodCabin } from "react-icons/gi";
+import { SiHomeassistantcommunitystore } from "react-icons/si";
+import { FaTreeCity } from "react-icons/fa6";
 function Navbar() {
+    let [visible,setvisible]=useState(false)
   return (
     <div id="Nav">
+        {visible?<div className="hamburger">
+            <div className="ham1">Login</div>
+            <div className="ham1">Sign up</div>
+            <div className="ham1">List your home</div>
+            <div className="ham1">help center</div>
+        </div>:<div></div>}
         <div className="nav1">
             <div className="logo">
                 <img src={logo} alt="" width="50px"/>
@@ -16,18 +31,31 @@ function Navbar() {
             </div>
             <div className="search">
                 <input type="text" placeholder='Search Destination'/>
-                <button>Search <CiSearch /></button>
+                <button><span>Search</span> <IoSearch /></button>
             </div>
             <div className='ham'>
                 <button id="btn1">List Your Home</button>
-                <button id="btn2">
+                <button id="btn2" onClick={()=>{
+                    setvisible(prev=>!prev)
+                }}>
                     <GiHamburgerMenu id="svg1"/>
                     <CgProfile id="svg2"/>
                     
                     </button>
             </div>
         </div>
-        <div className="nav2"></div>
+        <div className="nav2">
+            <div className="svg11"><MdOutlineWhatshot /><h3>Trending</h3></div>
+            <div className="svg11"><GiFamilyHouse /><h3>Houses</h3></div>
+            <div className="svg11"><MdBedroomParent /><h3>Rooms</h3></div>
+            <div className="svg11"><PiFarm /><h3>Farm Houses</h3></div>
+            <div className="svg11"><IoMdAddCircleOutline /><h3>Pool Houses</h3></div>
+            <div className="svg11"><LuTentTree /><h3>Tent Houses</h3></div>
+            <div className="svg11"><GiWoodCabin /><h3>Cabins</h3></div>
+            <div className="svg11"><SiHomeassistantcommunitystore />
+            <h3>Shops</h3></div>
+            <div className="svg11"><FaTreeCity /><h3>Forest Houses</h3></div>
+        </div>
     </div>
   )
 }
