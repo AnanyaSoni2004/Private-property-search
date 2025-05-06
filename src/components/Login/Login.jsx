@@ -2,7 +2,11 @@ import React from 'react'
 import './Login.css'
 function Login() {
   return (
-    <div id="login">
+    <div id="login"
+    onSubmit={(e)=>{
+      alert("Login Successfully.....")
+    }}
+    >
         <form action="">
         <span className='logintitle'>
             Login Page
@@ -17,8 +21,8 @@ function Login() {
             </div>
             <button id="loginbutton">Login</button>
         </form>
-
-    </div>
+      </div>
+    
   )
 }
 
