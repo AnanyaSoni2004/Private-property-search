@@ -13,22 +13,23 @@ import { LuTentTree } from "react-icons/lu";
 import { GiWoodCabin } from "react-icons/gi";
 import { SiHomeassistantcommunitystore } from "react-icons/si";
 import { FaTreeCity } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 function Navbar() {
     let [visible,setvisible]=useState(false)
   return (
     <div id="Nav">
         {visible?<div className="hamburger">
-            <div className="ham1">Login</div>
-            <div className="ham1">Sign up</div>
+            <Link to={'/Login'}><div className="ham1">Login</div></Link>
+            <Link to={'/Signup'}><div className="ham1">Sign up</div></Link>
             <div className="ham1">List your home</div>
             <div className="ham1">help center</div>
         </div>:<div></div>}
         <div className="nav1">
-            <div className="logo">
+            <Link to={""}><div className="logo">
                 <img src={logo} alt="" width="50px"/>
                 <h1>Private Property Rental</h1>
 
-            </div>
+            </div></Link>
             <div className="search">
                 <input type="text" placeholder='Search Destination'/>
                 <button><span>Search</span><IoSearch /></button>
