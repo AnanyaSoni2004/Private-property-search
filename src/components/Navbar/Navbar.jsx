@@ -13,7 +13,7 @@ import { LuTentTree } from "react-icons/lu";
 import { GiWoodCabin } from "react-icons/gi";
 import { SiHomeassistantcommunitystore } from "react-icons/si";
 import { FaTreeCity } from "react-icons/fa6";
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 function Navbar() {
     let [visible,setvisible]=useState(false)
   return (
@@ -46,8 +46,8 @@ function Navbar() {
             </div>
         </div>
         <div className="nav2">
-            <div className="svg11"><MdOutlineWhatshot /><h3>Trending</h3></div>
-            <div className="svg11"><GiFamilyHouse /><h3>Houses</h3></div>
+            <NavLink to={""}><div className="svg11"><MdOutlineWhatshot /><h3>Trending</h3></div></NavLink>
+            <NavLink to={"/Houses"}><div className="svg11"><GiFamilyHouse /><h3>Houses</h3></div></NavLink>
             <div className="svg11"><MdBedroomParent /><h3>Rooms</h3></div>
             <div className="svg11"><PiFarm /><h3>Farm Houses</h3></div>
             <div className="svg11"><IoMdAddCircleOutline /><h3>Pool Houses</h3></div>
