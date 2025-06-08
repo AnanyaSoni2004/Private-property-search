@@ -1,5 +1,6 @@
 import React from 'react'
 import './Login.css'
+import { IoLogInOutline } from "react-icons/io5";
 function Login() {
   return (
     <div id="login"
@@ -19,7 +20,8 @@ function Login() {
             <label htmlFor="pass">Password</label>
             <input type="password" id="pass"/>
             </div>
-            <button id="loginbutton">Login</button>
+            <button id="loginbutton">Login<IoLogInOutline />
+            </button>
         </form>
       </div>
     

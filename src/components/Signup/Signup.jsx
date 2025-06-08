@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Signup.css"
+import { IoPersonAddSharp } from "react-icons/io5";
 function Signup() {
   return (
     <div id="signup">
@@ -23,7 +24,7 @@ function Signup() {
             <label htmlFor="conpass1">Confirm Password</label>
             <input type="text" id="conpass1" required/>
             </div>
-            <button id="signupbtn">SignUp</button>
+            <button id="signupbtn">SignUp<IoPersonAddSharp /></button>
         </form>
 
     </div>
