@@ -6,6 +6,7 @@ import Signup from './components/Signup/Signup';
 import Houses from './components/Houses/Houses';
 import {Outlet} from 'react-router-dom'
 import Listing from './components/Listings/Listing';
+import Contact from './components/Contactus/Contact';
 function App() {
 
 
@@ -13,8 +14,9 @@ function App() {
     <>
     <Navbar/>
     <Outlet/>
-    <Listing/>
+    
     </>
+    
   )
 }
 

@@ -21,8 +21,8 @@ function Navbar() {
         {visible?<div className="hamburger">
             <Link to={'/Login'}><div className="ham1">Login</div></Link>
             <Link to={'/Signup'}><div className="ham1">Sign up</div></Link>
-            <div className="ham1">List your home</div>
-            <div className="ham1">help center</div>
+            <Link to={'./Listing'}><div className="ham1">List your home</div></Link>
+            <Link to={'/Contact'}><div className="ham1">help center</div></Link>
         </div>:<div></div>}
         <div className="nav1">
             <Link to={""}><div className="logo">
@@ -35,7 +35,7 @@ function Navbar() {
                 <button><span>Search</span><IoSearch /></button>
             </div>
             <div className='ham'>
-                <button id="btn1">List Your Home</button>
+                <Link to={"/Listing"}><button id="btn1">List Your Home</button></Link>
                 <button id="btn2" onClick={()=>{
                     setvisible(prev=>!prev)
                 }}>

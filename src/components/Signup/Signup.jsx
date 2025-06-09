@@ -3,7 +3,10 @@ import "./Signup.css"
 import { IoPersonAddSharp } from "react-icons/io5";
 function Signup() {
   return (
-    <div id="signup">
+    <div id="signup"
+      onSubmit={(e)=>{
+      alert("SignUp Successfully.....")
+      setaddListing(true)}}>
         <form action="">
         <span className='signuptitle'>
             Sign Up Page
