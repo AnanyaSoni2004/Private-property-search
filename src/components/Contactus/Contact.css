@@ -1,0 +1,86 @@
+#contact {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+#contact form {
+    width: 400px; 
+    padding: 40px; 
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px; 
+}
+.contacttitle {
+    font-size: 36px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 20px;
+}
+
+#contact .list {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#contact .list label {
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 5px;
+}
+
+#contact .list input {
+    width: 100%;
+    padding: 12px 10px;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid rgb(71, 71, 70);
+    border-radius: 6px;
+    color: black;
+}
+#contact .list textarea{
+    width: 100%;
+    padding: 12px 10px;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid rgb(71, 71, 70);
+    border-radius: 6px;
+    color: black;
+}
+
+#contactbutton{
+    padding: 12px 40px;
+    background-color: rgb(251, 12, 12);
+    color: white;
+    font-size: 18px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    border: none;
+    transition: all 0.2s;
+    cursor: pointer;
+    margin-top: 20px;
+}
+#contactbutton svg{
+    width: 20px;
+    height: 20px;
+    color: white; 
+}
